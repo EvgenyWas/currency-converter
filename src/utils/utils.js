@@ -20,8 +20,8 @@ export function tryConvert(courseFrom, courseTo, value) {
 // Function to get previous last update date in YYYY-MM-DD format
 export function getPreviousDate(date = new Date()) {
     const fullPreviousDate = new Date(date.getTime())
-    // CHANGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-    fullPreviousDate.setDate(date.getDate() - 3)
+    // Currently it costs 5 to show the real changes
+    fullPreviousDate.setDate(date.getDate() - 5)
     const year = fullPreviousDate.getFullYear()
     const month = fullPreviousDate.getMonth()
     const day = fullPreviousDate.getDate()
